@@ -6,72 +6,72 @@ import { useRef, useState, useEffect } from 'react'
 // Portrait screenshots (phone screenshots) are ~0.46. Landscape are ~1.3+.
 const allImages = [
   {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_9785.PNG-gJlQ42DOBgVADaFIPk0ffy9Ava356o.jpeg',
+    src: '/images/depoimentos/depoimento-camila.jpeg',
     alt: 'Depoimento Camila Custódio MUSA — saia que ficou larga',
     ratio: 0.46,
   },
   {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-13-zkDyjT9kYA8LAHwkqDoKV5gPcmQqhD.jpg',
+    src: '/images/depoimentos/depoimento-vsl-13.jpg',
     alt: 'Depoimento — calça que voltou a servir',
     ratio: 0.46,
   },
   {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-10-EjMDxGsWDkEgJ4zzEPKM2t45fifW86.jpg',
+    src: '/images/depoimentos/depoimento-vsl-10.jpg',
     alt: 'Depoimento Fernanda Moreira',
     ratio: 0.46,
   },
   {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-14-lQF0W9oLkXYCSioRuebx2ePbURW2b3.jpg',
+    src: '/images/depoimentos/depoimento-vsl-14.jpg',
     alt: 'Depoimento Sabrina e Keila',
     ratio: 0.46,
   },
   {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-9-LyLxLxTKytYniCWnvEl9BAh4Qaggwu.jpg',
+    src: '/images/depoimentos/depoimento-vsl-9.jpg',
     alt: 'Depoimento Vitória Barros -7kg',
     ratio: 0.46,
   },
   {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-11-Kz1FIVnL3Smro58Nqp7nG1IIccWweF.png',
+    src: '/images/depoimentos/depoimento-vsl-11.png',
     alt: 'Depoimento Gabriela Silva',
     ratio: 1.33, // landscape chat screenshot
   },
   {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-15-aGawae8BNBorC6HhWzj1c9Hs739Ap5.jpg',
+    src: '/images/depoimentos/depoimento-vsl-15.jpg',
     alt: 'Depoimento Monalisa MUSA',
     ratio: 0.46,
   },
   {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-12-u0hA4ydLEJvg5rbadHN8hWrWBgPgAt.jpg',
+    src: '/images/depoimentos/depoimento-vsl-12.jpg',
     alt: 'Depoimento Daisy Nunes — shorts 36',
     ratio: 0.46,
   },
   {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-2-k3QVOnjOueigUf3fl8PrCSVbb5y7e8.jpg',
+    src: '/images/depoimentos/depoimento-vsl-2.jpg',
     alt: 'Depoimento Cibele Almeida — balança',
     ratio: 0.46,
   },
   {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-03-25%20at%2013.27.41-0dsNsdGl1yhFdi6UiBdu42FJXJaXqn.jpeg',
+    src: '/images/depoimentos/whatsapp-2026-03-25-13-27-41.jpeg',
     alt: 'Depoimento Gabriela Soares MUSA Semestral — 3 meses de transformação',
     ratio: 0.56,
   },
   {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-03-26%20at%2005.01.43-3hgkUNpCmVoujT62fuBq6gHDD9XilP.jpeg',
+    src: '/images/depoimentos/whatsapp-2026-03-26-05-01-43.jpeg',
     alt: 'Depoimento Keila Brito MUSA — lipedema e melhora das dores menstruais',
     ratio: 0.46,
   },
   {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-03-25%20at%2013.38.18-5AXX6VXElIPgvOdXFbVOQu5wZovLyI.jpeg',
+    src: '/images/depoimentos/whatsapp-2026-03-25-13-38-18.jpeg',
     alt: 'Resultado -15kg com Método Corpo Feliz — de 101,9kg para 87,45kg',
     ratio: 0.56,
   },
   {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-03-25%20at%2015.28.13-xudmIIAI9vT8Sg3rMjJ22aKwRl2uEx.jpeg',
+    src: '/images/depoimentos/whatsapp-2026-03-25-15-28-13.jpeg',
     alt: 'Depoimento Regina Machado MUSA — medidas de Novembro 2025 a Fevereiro 2026',
     ratio: 0.46,
   },
   {
-    src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-03-25%20at%2013.40.55-Pa1SH6jxFKdKTl18vNO3JuX43dmEeK.jpeg',
+    src: '/images/depoimentos/whatsapp-2026-03-25-13-40-55.jpeg',
     alt: 'Depoimento transformação pós-gravidez com método da Laura',
     ratio: 0.56,
   },

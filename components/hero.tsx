@@ -43,7 +43,7 @@ export function Hero({ hideBottomContent = false }: HeroProps) {
         {/* Logo */}
         <div className="reveal mb-10 sm:mb-12">
           <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%20165%20%282%29-RoDBA8TV1oNG9u024AV9Gt19c7dub6.png"
+            src="/images/logo-corpo-feliz.png"
             alt="Comunidade Corpo Feliz"
             className="h-14 sm:h-16 w-auto object-contain"
             style={{ filter: 'brightness(0) invert(1)' }}

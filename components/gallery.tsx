@@ -3,18 +3,18 @@
 type Img = { src: string; alt: string }
 
 const imgs1: Img[] = [
-  { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_9785.PNG-gJlQ42DOBgVADaFIPk0ffy9Ava356o.jpeg', alt: 'Camila Custódio MUSA — saia que ficou larga' },
-  { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-13-zkDyjT9kYA8LAHwkqDoKV5gPcmQqhD.jpg', alt: 'Calça que voltou a servir' },
-  { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-10-EjMDxGsWDkEgJ4zzEPKM2t45fifW86.jpg', alt: 'Fernanda Moreira' },
-  { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-14-lQF0W9oLkXYCSioRuebx2ePbURW2b3.jpg', alt: 'Sabrina e Keila' },
-  { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-9-LyLxLxTKytYniCWnvEl9BAh4Qaggwu.jpg',  alt: 'Vitória Barros -7kg' },
+  { src: '/images/depoimentos/depoimento-camila.jpeg', alt: 'Camila Custódio MUSA — saia que ficou larga' },
+  { src: '/images/depoimentos/depoimento-vsl-13.jpg', alt: 'Calça que voltou a servir' },
+  { src: '/images/depoimentos/depoimento-vsl-10.jpg', alt: 'Fernanda Moreira' },
+  { src: '/images/depoimentos/depoimento-vsl-14.jpg', alt: 'Sabrina e Keila' },
+  { src: '/images/depoimentos/depoimento-vsl-9.jpg',  alt: 'Vitória Barros -7kg' },
 ]
 
 const imgs2: Img[] = [
-  { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-11-Kz1FIVnL3Smro58Nqp7nG1IIccWweF.png', alt: 'Gabriela Silva' },
-  { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-15-aGawae8BNBorC6HhWzj1c9Hs739Ap5.jpg', alt: 'Monalisa MUSA' },
-  { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-12-u0hA4ydLEJvg5rbadHN8hWrWBgPgAt.jpg', alt: 'Daisy Nunes' },
-  { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-2-k3QVOnjOueigUf3fl8PrCSVbb5y7e8.jpg',  alt: 'Cibele Almeida' },
+  { src: '/images/depoimentos/depoimento-vsl-11.png', alt: 'Gabriela Silva' },
+  { src: '/images/depoimentos/depoimento-vsl-15.jpg', alt: 'Monalisa MUSA' },
+  { src: '/images/depoimentos/depoimento-vsl-12.jpg', alt: 'Daisy Nunes' },
+  { src: '/images/depoimentos/depoimento-vsl-2.jpg',  alt: 'Cibele Almeida' },
 ]
 
 function MasonryGallery({ imgs, dark }: { imgs: Img[]; dark?: boolean }) {

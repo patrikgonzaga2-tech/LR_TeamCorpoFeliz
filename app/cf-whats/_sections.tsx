@@ -49,7 +49,7 @@ export function HeroLight() {
         {/* Logo */}
         <div className="reveal mb-10 sm:mb-12">
           <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%20165%20%282%29-RoDBA8TV1oNG9u024AV9Gt19c7dub6.png"
+            src="/images/logo-corpo-feliz.png"
             alt="Comunidade Corpo Feliz"
             className="h-14 sm:h-16 w-auto object-contain"
             style={{ filter: 'brightness(0) invert(1)' }}
@@ -157,12 +157,12 @@ export function HeroLight() {
 // PROVA — galeria de depoimentos reais (reusa imagens do gallery.tsx)
 // ────────────────────────────────────────────────────────────────────
 const provaImgs = [
-  { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_9785.PNG-gJlQ42DOBgVADaFIPk0ffy9Ava356o.jpeg', alt: 'Camila Custódio MUSA — saia que ficou larga' },
-  { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-13-zkDyjT9kYA8LAHwkqDoKV5gPcmQqhD.jpg', alt: 'Calça que voltou a servir' },
-  { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-10-EjMDxGsWDkEgJ4zzEPKM2t45fifW86.jpg', alt: 'Fernanda Moreira' },
-  { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-14-lQF0W9oLkXYCSioRuebx2ePbURW2b3.jpg', alt: 'Sabrina e Keila' },
-  { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-9-LyLxLxTKytYniCWnvEl9BAh4Qaggwu.jpg', alt: 'Vitória Barros -7kg' },
-  { src: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Co%CC%81pia%20de%20Depoimento-VSL-12-u0hA4ydLEJvg5rbadHN8hWrWBgPgAt.jpg', alt: 'Daisy Nunes' },
+  { src: '/images/depoimentos/depoimento-camila.jpeg', alt: 'Camila Custódio MUSA — saia que ficou larga' },
+  { src: '/images/depoimentos/depoimento-vsl-13.jpg', alt: 'Calça que voltou a servir' },
+  { src: '/images/depoimentos/depoimento-vsl-10.jpg', alt: 'Fernanda Moreira' },
+  { src: '/images/depoimentos/depoimento-vsl-14.jpg', alt: 'Sabrina e Keila' },
+  { src: '/images/depoimentos/depoimento-vsl-9.jpg', alt: 'Vitória Barros -7kg' },
+  { src: '/images/depoimentos/depoimento-vsl-12.jpg', alt: 'Daisy Nunes' },
 ]
 
 export function Prova() {
@@ -777,7 +777,7 @@ export function FooterLight() {
     <footer className="py-8 text-center" style={{ background: 'var(--gd)' }}>
       <div className="max-w-[1080px] mx-auto px-5 sm:px-8 flex flex-col items-center gap-4">
         <img
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%20165%20%282%29-RoDBA8TV1oNG9u024AV9Gt19c7dub6.png"
+          src="/images/logo-corpo-feliz.png"
           alt="Comunidade Corpo Feliz"
           className="h-10 w-auto object-contain opacity-60"
           style={{ filter: 'brightness(0) invert(1)' }}
